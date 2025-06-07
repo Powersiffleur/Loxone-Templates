@@ -54,16 +54,16 @@
         <div id="temperature">Current Room Temperature: <span id="temperature-value"></span></div>
     </main>
     <footer>
-        <p>&copy; The Automation Gym</p>
+        <p>&copy; The owr siffleur</p>
     </footer>
     <script>
-        const powerUrl = 'http://192.168.0.69/jdev/sps/io/1aa6431f-038d-2505-ffff9adf38a524c0/state';
-        const temperatureUrl = 'http://192.168.0.69/jdev/sps/io/1aa6423b-01a1-7550-ffff9adf38a524c0/state';
+        const powerUrl = 'http://msd24b/#/504f94a1d24b/control/1e57bac3-00ca-aa2e-ffff54e12a335953
+        const temperatureUrl = 'http://msd24b/#/504f94a1d24b/control/1e57bac3-00ca-aa2e-ffff54e12a335953';
         const powerContainer = document.getElementById('power-value');
         const temperatureContainer = document.getElementById('temperature-value');
 
         // Encode the username and password for basic authentication
-        const authString = btoa('Data:PullData!2009');
+        const authString = btoa('admin:Nokia6680..');
 
         function fetchData(url, container) {
             fetch(url, {
